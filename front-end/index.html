@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Ruta00</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <header>  
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Ruta00</a>
+      <ul class="right hide-on-med-and-down">
+        <li></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  </header>
+  <main>  
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Buscá tu viaje en Ruta00</h1>
+      <div class="row center">
+          <form class="col s12" id="consulta" name="consulta">
+            <div class="row">
+              <div class="input-field col s4">
+                <input id="origen" type="text">
+                <label for="origen">Origen</label>
+              </div>
+              <div class="input-field col s4">
+                <input id="destino" type="text">
+                <label for="destino">Destino</label>
+              </div>
+              <div class="input-field col s4">
+                <input id="fecha" type="date" data-date-format="DD MMMM YYYY">
+                <label for="fecha">Fecha</label>
+              </div>
+              <a class="btn-large waves-effect waves-light orange"  id="botonEnviar" name="botonEnviar" >Buscar!
+                <i class="material-icons right">directions_bus</i>
+              </a>              
+            </div>
+          </form>
+        </div>
+      <div class="row center tabla" >
+        <table id="mytable" name="mytable" class="center" >
+          <thead>
+            <tr>
+              <th>Empresa</th>
+              <th>Origen</th>
+              <th>Destino</th>
+              <th>Fecha</th>
+              <th>Precio</th>
+              <th>Disponibles</th>
+              <th>Opciones</th>
+            </tr>
+          </thead>
+          <tbody id="tBody"></tbody>
+        </table>
+      </div>
+      
+      <br><br>
+
+    </div>
+  </div>
+</main>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      
+    <div class="footer-copyright">
+      <div class="container">
+      
+      </div>
+      <div class="container">
+      Gonzalo Valverde
+      </div>
+      <div class="container">
+      Villalba Julian
+      </div>
+      <div class="container">
+      SDII 2020
+      </div>
+      <div class="container">
+      </div>
+    </div>
+  </footer>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
